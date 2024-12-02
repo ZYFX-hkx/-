@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>怪物猎人：世界 狩猎指南</title>
     <style>
-        /* 全局样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             font-family: "Arial", sans-serif;
             line-height: 1.8;
@@ -20,13 +14,13 @@
         }
         header {
             background: rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
+            padding: 15px 20px;
             position: fixed;
             width: 100%;
             z-index: 1000;
         }
         header h1 {
-            font-size: 1.8em;
+            font-size: 2em;
             color: #FFD700;
             text-shadow: 1px 1px 5px #000;
         }
@@ -41,21 +35,19 @@
         nav ul li a {
             text-decoration: none;
             color: #fff;
-            font-size: 1em;
+            font-size: 1.1em;
             transition: color 0.3s;
         }
         nav ul li a:hover {
             color: #FFD700;
         }
-
-        /* 主体内容 */
         .container {
             padding: 100px 20px;
             max-width: 1200px;
             margin: auto;
         }
-        h2 {
-            font-size: 1.5em;
+        h2, h3 {
+            font-size: 1.6em;
             color: #FFD700;
             text-shadow: 1px 1px 5px #000;
             margin: 20px 0;
@@ -80,8 +72,6 @@
             border-bottom: 1px dotted #FFD700;
             cursor: help;
         }
-
-        /* 按钮样式 */
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -91,13 +81,12 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
         .btn:hover {
             background: #FFA500;
+            transform: scale(1.05);
         }
-
-        /* 底部样式 */
         footer {
             text-align: center;
             background: rgba(0, 0, 0, 0.8);
@@ -122,20 +111,23 @@
     </header>
 
     <div class="container">
+        <!-- 引导部分 -->
         <section id="intro">
             <h2>🎮 欢迎加入狩猎行动</h2>
             <p>欢迎来到《<em>Monster Hunter: World</em>》的冒险世界！作为一名猎人，你将面对各种<mark>强大的怪物</mark>，挑战自我极限！</p>
         </section>
 
+        <!-- 主要怪物介绍 -->
         <section id="monsters">
             <h2>🦖 主要怪物介绍</h2>
             <ul>
                 <li><strong>雄火龙</strong>：<mark>飞龙之王</mark>，擅长空中攻击。</li>
-                <li><strong>灭尽龙</strong>：以古龙为食的古龙，攻击凶猛无比。</li>
-                <li><strong>尸套龙</strong>：操控瘴气的古龙，闻风丧胆。</li>
+                <li><strong>灭尽龙</strong>：以破坏为乐的<em>古龙</em>种，攻击凶猛无比。</li>
+                <li><strong>尸套龙</strong>：操控瘴气的<abbr title="Elder Dragon">古龙</abbr>，闻风丧胆。</li>
             </ul>
         </section>
 
+        <!-- 装备推荐 -->
         <section id="equipment">
             <h2>⚔️ 猎人装备推荐</h2>
             <ol>
@@ -145,6 +137,7 @@
             </ol>
         </section>
 
+        <!-- 狩猎技巧 -->
         <section id="tips">
             <h2>📜 狩猎技巧</h2>
             <dl>
@@ -157,13 +150,15 @@
             </dl>
         </section>
 
+        <!-- 加入行动 -->
         <section id="join">
             <h2>🎉 加入狩猎</h2>
             <p>立即加入狩猎行动，和你的伙伴一起<mark>组队</mark>出发，成为真正的猎人！</p>
-            <a class="btn" href="#">立即预约！</a>
+            <a class="btn" href="https://www.monsterhunter.com/" target="_blank">立即预约！</a>
         </section>
     </div>
 
+    <!-- 底部 -->
     <footer>
         <p>© 2024 猎人协会 | 适配平台：PC, PS4, Xbox One</p>
     </footer>
