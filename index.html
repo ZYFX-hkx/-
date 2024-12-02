@@ -15,10 +15,12 @@
         }
         header {
             background: rgba(0, 0, 0, 0.7);
-            padding: 8px 20px;  
+            padding: 5px 20px; 
             position: fixed;
             width: 100%;
             z-index: 1000;
+            top: 0;
+            left: 0;
             text-align: center;
         }
         header h1 {
@@ -27,15 +29,20 @@
             text-shadow: 1px 1px 5px #000;
             margin: 0; 
         }
+        nav {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin-top: 10px;
+        }
         nav ul {
-            display: inline-block; 
+            display: flex; 
             list-style: none;
             margin: 0;
             padding: 0;
         }
         nav ul li {
-            display: inline-block;  
-            margin: 0 15px;
+            margin: 0 15px; 
         }
         nav ul li a {
             text-decoration: none;
@@ -50,6 +57,9 @@
             padding: 100px 20px;
             max-width: 1200px;
             margin: auto;
+        }
+        section {
+            padding-top: 70px; 
         }
         h2, h3 {
             font-size: 1.6em;
@@ -100,6 +110,10 @@
             font-size: 0.8em;
             color: #ccc;
         }
+
+        html {
+            scroll-behavior: smooth; /* 添加平滑滚动效果 */
+        }
     </style>
 </head>
 <body>
@@ -127,8 +141,8 @@
             <h2>🦖 主要怪物介绍</h2>
             <ul>
                 <li><strong>雄火龙</strong>：<mark>飞龙之王</mark>，擅长空中攻击。</li>
-                <li><strong>灭尽龙</strong>：以破坏为乐的<em>古龙</em>种，攻击凶猛无比。</li>
-                <li><strong>尸套龙</strong>：操控瘴气的<abbr title="Elder Dragon">古龙</abbr>，闻风丧胆。</li>
+                <li><strong>灭尽龙</strong>：以古龙为食的古龙<em>古龙</em>种，攻击凶猛无比。</li>
+                <li><strong>尸套龙</strong>：操控瘴气的<abbr title="Elder Dragon">古龙</abbr>，闻风丧胆，扮演生态循环的分解者。</li>
             </ul>
         </section>
 
@@ -161,7 +175,7 @@
             <p>立即加入狩猎行动，和你的伙伴一起<mark>组队</mark>出发，成为真正的猎人！</p>
             <p>你知道吗？灭尽龙的角由<mark>生物陶瓷</mark>构成，这使它既坚硬又轻巧。</p>
             <p>此外，游戏中的生态系统是基于<ruby>现实动物行为<rp>(</rp><rt>Real Animal Behavior</rt><rp>)</rp></ruby>模拟的，怪物之间甚至会互相争斗。</p>
-            <a class="btn" href="https://www.monsterhunter.com/wilds/" target="_blank">立即预约新一代怪猎-Monster Hunter Wilds！</a>
+            <a class="btn" href="https://www.monsterhunter.com/wilds/" target="_blank">立即预约怪猎新作-Monster Hunter Wilds！</a>
         </section>
     </div>
 
